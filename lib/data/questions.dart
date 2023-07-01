@@ -1,5 +1,8 @@
 import 'package:quiz_app/models/quiz_question.dart';
 
+/// The code is creating a list of QuizQuestion objects called `questions`. Each QuizQuestion object
+/// represents a question and its corresponding answer options. The questions and answer options are
+/// defined using strings.
 const questions = [
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',

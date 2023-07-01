@@ -13,6 +13,8 @@ class Quiz extends StatefulWidget {
   }
 }
 
+/* The _QuizState class manages the state of a quiz, including the selected answers and the active
+screen.*/
 class _QuizState extends State<Quiz> {
   List<String> selectedAnswers = [];
   var activeScreen = 'start-screen';
@@ -23,6 +25,12 @@ class _QuizState extends State<Quiz> {
     });
   }
 
+  /// The code defines a Dart function that handles the selection of answers in a quiz app and updates
+  /// the screen accordingly.
+  /// 
+  /// Args:
+  ///   answer (String): The parameter "answer" is a string that represents the selected answer to a
+  /// question.
   void chosenAnswers(String answer) {
     selectedAnswers.add(answer);
     if (selectedAnswers.length == questions.length) {

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// The `StartScreen` class is a stateless widget that displays a start screen for a quiz app, including
+/// a logo, a text, and a button to start the quiz.
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/* The ResultsScreen class is a StatelessWidget that displays the user's chosen answers, the number of
+ correct answers, and a button to restart the quiz.*/
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key, required this.chosenAnswers});
   final List<String> chosenAnswers;
