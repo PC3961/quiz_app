@@ -3,6 +3,8 @@ import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+/// The QuestionsScreen class is a StatefulWidget that displays a question and a list of answer buttons,
+/// and calls a callback function when an answer is selected.
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key, required this.onSelectAnswer});
   final void Function(String answer) onSelectAnswer;
