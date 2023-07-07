@@ -12,7 +12,8 @@ class QuestionsSummary extends StatelessWidget {
         return Row(
           children: [
             Text(((data['question'] as int) + 1).toString()),
-            Column(
+           Expanded(
+            child:Column(
               children: [
                 Text(data ['questions']as String),
                 const SizedBox(height: 5,),
@@ -20,6 +21,7 @@ class QuestionsSummary extends StatelessWidget {
                 Text(data['correct-answer']as String),
                 ],
             ),
+            ) 
 
           ],
         );
