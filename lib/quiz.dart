@@ -44,6 +44,8 @@ class _QuizState extends State<Quiz> {
   Widget build(context) {
     Widget screenWidget = StartScreen(switchScreen);
 
+    /// The code block is checking the value of the `activeScreen` variable and assigning the
+    /// appropriate widget to the `screenWidget` variable.
     if (activeScreen == 'questions-screen') {
       screenWidget = QuestionsScreen(onSelectAnswer: chosenAnswers);
     }
